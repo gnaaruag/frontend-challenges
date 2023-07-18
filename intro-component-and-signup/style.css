@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    --red: hsl(0, 100%, 74%); 
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --darkblue: hsl(249, 10%, 26%); 
+    --grayishblue: hsl(246, 25%, 77%);
+}
+
+body {
+    background-color: var(--red);
+    background-image: url("./assets/bg-intro-mobile.png");
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.static-part {
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.static-part > h1 {
+    margin-top: 3em;
+    text-align: center;
+    max-width: 100%;
+    font-weight: 600;
+    font-size: 1.75em;
+}
+
+.static-part > p {
+    margin: 0 0.25em 0 0.25em;
+    font-size: 0.9em;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    font-weight: 400;
+
+}
+
+.dyn-part {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.dyn-part > p {
+    margin-top: 2.5em;
+    color: white;
+    padding: 1em 2.5em;
+    text-align: center;
+    max-width: 100%;
+    font-family: 'poppins', sans-serif;
+    border-radius: 0.5em;
+    background-color: var(--blue);
+    box-shadow: 5px;
+}
+
+.form {
+    margin: 1em 0;
+    border-radius: 0.5em;
+    padding: 2em 1.5em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.form > .input {
+    padding: 0.5em 1em;
+    letter-spacing: 0.1em;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    border-width: 0.05em ;
+    border-radius: 0.30em;
+    border-color: var(--grayishblue);
+    margin: 1em 0.25em;
+    min-height: 2.5em;
+}
+
+.enter {
+    margin-top: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: var(--green);
+    min-height: 2.5em;
+    border-radius: 0.30em;
+    border-width: 0em;
+    box-shadow: 0.5em;
+    letter-spacing: 0.1em;
+}
+
+.enter:hover {
+    opacity: 0.5;
+}
+
+
+.tail {
+    text-align: center;
+    margin: 0.5em 0.8em;
+    font-size: 0.7em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: var(--grayishblue);
+}
+
+.form > a {
+    color: var(--red);
+}
+
+.error {
+    display: none;
+}
+
+.errorTrigger {
+    padding-right: 0.5em;
+    margin: 0.1em 0;
+    text-align: end;
+    color: var(--red);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+
+}
+
+@media only screen and (min-width: 600px) {
+    .main {
+        margin: 4em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .static-part {
+        margin-top: -2em;
+        max-width: 30%;
+
+    }
+
+    .static-part > h1 {
+        font-size: 3em;
+    }
+
+    .static-part > p {
+        font-size: 1em;
+    }
+
+    .dyn-part {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-evenly;
+    }
+
+}
+
+

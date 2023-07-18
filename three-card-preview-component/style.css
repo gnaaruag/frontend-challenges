@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+   font-family: 'Lexend Deca', sans-serif; */
+
+:root {
+    --brightorange: hsl(31, 77%, 52%);
+    --darkcyan: hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+    --transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --verylightgray: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--verylightgray);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    min-height: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sedan {
+    background-color: var(--brightorange);
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+}
+
+.suv {
+    background-color: var(--darkcyan);
+}
+
+.lux {
+    background-color: var(--verydarkcyan);
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.ico {
+    margin: 1em 0;
+    padding-left: 1em;
+}
+
+.head {
+    padding-left: 1em;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: var(--transparentwhite);
+}
+
+.content {
+    padding: 0 1.5em;
+    margin: 1em 1em;
+    line-height: 1.5em;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--transparentwhite);
+    font-weight: 400;
+
+}
+
+.but {
+    padding: 0 1.5em;
+    margin: 1em 2.5em 2em 2.5em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    background-color: var(--verylightgray);
+    min-height: 2.5em;
+    min-width: 4em;
+    border: hidden;
+    border-radius: 2em;
+}
+
+.sedan > .but {
+    color: var(--brightorange);
+}
+
+.sedan > .but:hover {
+    border: solid;
+    border-width: 0.25em;
+    border-color: var(--verylightgray);
+    background-color: var(--brightorange);
+    color: var(--verylightgray);
+}
+
+.suv > .but{
+    color: var(--darkcyan);
+}
+
+.suv > .but:hover {
+    border: solid;
+    border-width: 0.25em;
+    border-color: var(--verylightgray);
+    background-color: var(--darkcyan);
+    color: var(--verylightgray);
+}
+
+.lux > .but{
+    color: var(--verydarkcyan);
+}
+
+.lux > .but:hover {
+    border: solid;
+    border-width: 0.25em;
+    border-color: var(--verylightgray);
+    background-color: var(--verydarkcyan);
+    color: var(--verylightgray);
+}
+
+@media only screen and (min-width: 1150px) {
+
+    .root {
+        display: flex;
+        flex-direction: row;
+        max-width: 40%;
+        max-height: 70%;
+    }    
+
+    .sedan {
+        min-width: 33%;
+        max-height: 100;
+        border-top-left-radius: 0.5em;
+        border-bottom-left-radius: 0.5em;
+        border-top-right-radius: 0;
+    }
+
+    .suv {
+        min-width: 33%;
+        max-height: 100;
+    }
+
+    .lux {
+        min-width: 33%;
+        max-height: 100;
+        border-top-right-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+        border-bottom-left-radius: 0;
+    }
+}
